@@ -8,39 +8,94 @@
 </head>
 <body>
     <header class="section">
-        <div class="container">
-            <nav class="header">
-                <!-- Логотип сайта -->
-                <a class="header__logo logo" href="./index.html">
-                    <img src="./icons/png/logo.png" alt="Логотип">
-                </a>
+        <nav class="header">
+            <!-- Логотип сайта -->
+            <a class="header__logo logo" href="./index.html">
+                <img src="./icons/png/logo.png" alt="Логотип">
+            </a>
             
-                <!-- Навигация в шапке -->
-                <ul class="header__navigations navigations">
-                    <li class="navigations__item">
-                        <a class="navigations__link" href="#">Главная</a>
+            <!-- Навигация в шапке -->
+            <ul class="header__navigations navigations">
+                <li class="navigations__item">
+                    <a class="navigations__link" href="#">Главная</a>
+                </li>
+                <li class="navigations__item">
+                    <a class="navigations__link" href="#">Курсы</a>
+                </li>
+                <li class="navigations__item">
+                    <a class="navigations__link" href="#">Расписание</a>
+                </li>
+                <li class="navigations__item">
+                    <a class="navigations__link" href="#">Преподаватели</a>
+                </li>
+                <li class="navigations__item">
+                    <a class="navigations__link" href="#">Рассылка</a>
+                </li>
+                <li class="navigations__item">
+                    <a class="navigations__link" href="#">Контакты</a>
+                </li>
+            </ul>
+            
+            <!-- Авторизация -->
+            <button class="header__button button" type="button">Зайти в кабинет</button>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Секция герой -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Первый курс по компьютерной сборке</h1>
+                
+                <!-- Таймер -->
+                <ul class="hero__timer timer">
+                    <li class="timer__item">
+                        <span class="timer__value">18</span>
+                        <span class="timer__text">Дней</span>
                     </li>
-                    <li class="navigations__item">
-                        <a class="navigations__link" href="#">Курсы</a>
+                    <li class="timer__item">
+                        <span class="timer__value">18</span>
+                        <span class="timer__text">Часов</span>
                     </li>
-                    <li class="navigations__item">
-                        <a class="navigations__link" href="#">Расписание</a>
+                    <li class="timer__item">
+                        <span class="timer__value">18</span>
+                        <span class="timer__text">Минут</span>
                     </li>
-                    <li class="navigations__item">
-                        <a class="navigations__link" href="#">Преподаватели</a>
-                    </li>
-                    <li class="navigations__item">
-                        <a class="navigations__link" href="#">Рассылка</a>
-                    </li>
-                    <li class="navigations__item">
-                        <a class="navigations__link" href="#">Контакты</a>
+                    <li class="timer__item">
+                        <span class="timer__value">18</span>
+                        <span class="timer__text">Секунд</span>
                     </li>
                 </ul>
-            
-                <!-- Авторизация -->
-                <button class="header__button button" type="button">Зайти в кабинет</button>
-            </nav>
-        </div>
-    </header>
+                
+                <!-- Полоса состояния -->
+                <div class="hero__sidebar sidebar">
+                    <a class="sidebar__link" href="#">Заказать курс</a>
+                    
+                    <ul class="sidebar__students">
+                        <li class="sidebar__item">
+                            <p class="sidebar__text">Учеников всего:</p>
+                            <span class="sidebar__value">200</span>
+                        </li>
+                        <li class="sidebar__item">
+                            <p class="sidebar__text">Успешно закончили курс:</p>
+                            <span class="sidebar__value">190</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="sidebar__lane">
+                        <div class="sidebar__money">
+                            <p class="sidebar__text">Заработано учениками:</p>
+                            <span class="sidebar__value">400 000₽</span>
+                        </div>
+                        <span class="sidebar__progress"></span>
+                        <div class="sidebar__point">
+                            <span class="sidebar__text">0</span>
+                            <span class="sidebar__text">1 000 000₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
