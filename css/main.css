@@ -79,6 +79,28 @@ p {
   }
 }
 
+@-webkit-keyframes progress-line {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes progress-line {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -230,6 +252,7 @@ p {
   height: 6px;
   margin-bottom: 5px;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .sidebar__progress-line {
@@ -237,6 +260,10 @@ p {
   width: 440px;
   height: 6px;
   background-image: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  -webkit-animation: progress-line 1000ms linear;
+          animation: progress-line 1000ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .sidebar__point {
