@@ -1,0 +1,27 @@
+.navigations {
+  display: flex;
+}
+
+.navigations__item {
+  margin-right: 56px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigations__link {
+  @include text();
+
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  color: var(--main-text-color);
+  transition: opacity 250ms linear;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

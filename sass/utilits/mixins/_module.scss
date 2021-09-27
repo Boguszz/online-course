@@ -1,0 +1,11 @@
+@mixin text($weight: 400, $size: 16px, $height: 1.5, $opacity: 1) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  opacity: $opacity;
+}
+
+@mixin section($top: 100px, $bottom: 100px) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}

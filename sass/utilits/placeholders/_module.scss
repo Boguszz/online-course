@@ -1,0 +1,22 @@
+%button {
+  display: inline-block;
+  padding: 10px 30px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--main-text-color);
+  border: 0;
+  border-radius: 50px;
+  background-image: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  background-color: #000000;
+  cursor: pointer;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

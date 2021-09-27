@@ -1,0 +1,64 @@
+.sidebar {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+
+  padding-top: 35px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--second-bg-color);
+}
+
+.sidebar__link {
+  margin-right: 81px;
+}
+
+.sidebar__students {
+  width: 251px;
+  margin-right: 81px;
+}
+
+.sidebar__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar__text {
+  @include text($opacity: 0.4);
+
+  &--margin {
+    margin-right: 30px;
+  }
+}
+
+.sidebar__value {
+  @include text($weight: 700);
+}
+
+.sidebar__money {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.sidebar__progress {
+  display: block;
+  width: 714px;
+  height: 6px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+}
+
+.sidebar__progress-line {
+  display: block;
+  width: 440px;
+  height: 6px;
+  background-image: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+
+.sidebar__point {
+  display: flex;
+  justify-content: space-between;
+}

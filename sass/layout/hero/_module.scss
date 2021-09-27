@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  height: 960px;
+  padding-top: 270px;
+  padding-bottom: 348px;
+
+  background-image: url(../images/1344/hero/1/img1x-1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/1344/hero/1/img2x-3840.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/1344/hero/1/img3x-5760.jpg);
+  }
+}
+
+.hero__title {
+  @include text($weight: 700, $size: 64px, $height: 1.4);
+  width: 920px;
+  margin-bottom: 50px;
+}
+
+.hero__timer {
+}
+
+.hero__sidebar {
+}
