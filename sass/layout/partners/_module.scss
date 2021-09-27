@@ -1,0 +1,29 @@
+.partners__wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.partners__semicircle {
+  margin-right: 20px;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners__item {
+  padding: 29px 66px;
+  flex-basis: calc(100% / 4);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:nth-child(4n + 4) {
+    border-right: none;
+  }
+
+  &:nth-last-child(-n + 4) {
+    border-bottom: none;
+  }
+}
