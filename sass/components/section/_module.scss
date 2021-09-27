@@ -1,3 +1,7 @@
 .section {
   @include section();
+
+  &--about {
+    @include section($top: 200px);
+  }
 }
