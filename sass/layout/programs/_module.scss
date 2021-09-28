@@ -1,0 +1,94 @@
+.programs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programs__wrapper {
+  text-align: center;
+}
+
+.programs__semicircle {
+  margin-bottom: 31px;
+}
+
+.programs__title {
+  margin-bottom: 30px;
+}
+
+.programs__description {
+  @include text($height: 1.6, $opacity: 0.5);
+  text-align: center;
+  width: 411px;
+  margin-bottom: 80px;
+}
+
+.programs__list {
+}
+
+.programs__item {
+  &:nth-child(2n + 1) {
+    position: relative;
+    right: 177px;
+    text-align: right;
+  }
+
+  &:nth-child(2n) {
+    position: relative;
+    left: 177px;
+  }
+
+  &:nth-child(2n + 1)::after {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    content: "";
+    display: flex;
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:nth-child(2n)::after {
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    content: "";
+    display: flex;
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.programs__subtitle {
+  @include text($size: 14px, $height: 1.6, $opacity: 0.5);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.programs__text {
+  @include text($size: 18px, $height: 1.6);
+  width: 228px;
+}
+
+.programs__progress {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  display: block;
+  width: 6px;
+  height: 677px;
+  background-image: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #7c6afa;
+    animation: progress 15000ms linear infinite;
+  }
+}

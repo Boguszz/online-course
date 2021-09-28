@@ -4,4 +4,8 @@
   &--about {
     @include section($top: 200px);
   }
+
+  &--programs {
+    @include section($top: 53px, $bottom: 71px);
+  }
 }
