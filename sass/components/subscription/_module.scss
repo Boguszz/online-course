@@ -1,0 +1,23 @@
+.subscription {
+  position: relative;
+}
+
+.subscription__input {
+  @include text($size: 14px);
+  color: var(--main-text-color);
+  width: 492px;
+  padding: 11px 190px 11px 30px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 50px;
+
+  &::placeholder {
+    @include text($size: 14px, $height: 1.6, $opacity: 0.8);
+  }
+}
+
+.subscription__button {
+  position: absolute;
+  top: 0;
+  left: 68%;
+}
