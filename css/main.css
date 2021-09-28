@@ -784,4 +784,72 @@ p {
   -webkit-animation: progress 15000ms linear infinite;
           animation: progress 15000ms linear infinite;
 }
+
+.teachers__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 113px;
+}
+
+.teachers__semicircle {
+  margin-right: 20px;
+}
+
+.teachers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teachers__item {
+  width: 416px;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.teachers__item:last-child {
+  margin-right: 0;
+}
+
+.teachers__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.teachers__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+.teachers__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.teachers__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 1;
+  background-image: none;
+  border: 1px solid #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
